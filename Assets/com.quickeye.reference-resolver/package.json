@@ -1,0 +1,8 @@
+{
+    "name": "com.quickeye.reference-resolver",
+    "displayName": "Reference Resolver",
+    "author": "Quick Eye",
+    "version": "1.0.0",
+    "unity": "2018.4",
+    "type": "library"
+  }

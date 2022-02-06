@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <uie:Toolbar name="top--toolbar">
+        <Style src="project://database/Assets/com.quickeye.reference-resolver/Editor/Resources/com.quickeye.reference-resolver/ReferenceResolverWindow.uss?fileID=11400000&amp;guid=6ec7c52ea1371b24b8d35cc514430136&amp;type=3#ReferenceResolverWindow" />
+        <uie:ToolbarButton text="Apply" name="apply--button" />
+        <uie:ToolbarButton text="Revert" name="revert--button" />
+        <uie:ToolbarButton text="Button" name="set--button" />
+        <uie:ToolbarSearchField focusable="true" name="query--field" style="width: 283px; flex-grow: 1;" />
+    </uie:Toolbar>
+    <ui:VisualElement style="flex-grow: 1;">
+        <Style src="project://database/Assets/com.quickeye.reference-resolver/Editor/Resources/com.quickeye.reference-resolver/ReferenceResolverWindow.uss?fileID=11400000&amp;guid=6ec7c52ea1371b24b8d35cc514430136&amp;type=3#ReferenceResolverWindow" />
+        <ui:VisualElement>
+            <ui:Label text="Game Objects" class="header" />
+            <ui:ListView focusable="true" name="gameObject--list" class="list-vertical" style="height: 60px;" />
+        </ui:VisualElement>
+        <ui:VisualElement>
+            <ui:Label text="Serialized Fields" class="header" />
+            <ui:ListView focusable="true" name="prop--list" class="list-vertical" style="height: 90px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1;">
+            <ui:Label text="Components" class="header" />
+            <QuickEye.ReferenceValidator.ComponentBrowser name="ComponentBrowser" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

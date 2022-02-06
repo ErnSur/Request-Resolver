@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "com.quickeye.ui-toolkit-plus": {
+      "version": "file:C:\\Users\\Work\\Repos\\Other\\UI-Toolkit-Plus\\Packages\\com.quickeye.ui-toolkit-plus",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.collab-proxy": {
       "version": "1.14.4",
       "depth": 0,
@@ -80,12 +86,11 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
-    "com.unity.ui.builder": {
-      "version": "1.0.0-preview.18",
+    "odininspector": {
+      "version": "file:C:\\Users\\Work\\Repos\\Sayollo\\Development-UnitySDK\\UnityProject\\Packages\\odin-inspector",
       "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
+      "source": "local",
+      "dependencies": {}
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",

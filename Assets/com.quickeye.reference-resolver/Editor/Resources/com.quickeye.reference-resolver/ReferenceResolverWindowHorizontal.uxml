@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <uie:Toolbar name="top--toolbar">
+        <Style src="ReferenceResolverWindow.uss" />
+        <uie:ToolbarButton text="Apply" name="apply--button" />
+        <uie:ToolbarButton text="Revert" name="revert--button" />
+    </uie:Toolbar>
+    <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+        <Style src="ReferenceResolverWindow.uss" />
+        <ui:ListView focusable="true" name="gameObject--list" class="list" />
+        <ui:ListView focusable="true" name="prop--list" class="list" />
+        <QuickEye.ReferenceValidator.ComponentBrowser name="ComponentBrowser" style="flex-grow: 0.3;" />
+    </ui:VisualElement>
+</ui:UXML>

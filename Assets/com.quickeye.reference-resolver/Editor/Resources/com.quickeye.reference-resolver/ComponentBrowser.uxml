@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement style="height: 25px; max-height: 25px; min-height: 25px; flex-direction: row; background-color: rgb(47, 47, 47);">
+        <Style src="ComponentBrowser.uss" />
+        <QuickEye.ReferenceValidator.Tab text="Children" name="children--tab" />
+        <QuickEye.ReferenceValidator.Tab text="Self" name="self--tab" />
+        <QuickEye.ReferenceValidator.Tab text="Ancestors" name="ancestors--tab" />
+    </ui:VisualElement>
+    <ui:ListView focusable="true" name="children--list" class="cb--list">
+        <Style src="ComponentBrowser.uss" />
+    </ui:ListView>
+    <ui:ListView focusable="true" name="self--list" class="cb--list" style="display: none;">
+        <Style src="ComponentBrowser.uss" />
+    </ui:ListView>
+    <ui:ListView focusable="true" name="ancestors--list" class="cb--list" style="display: none;">
+        <Style src="ComponentBrowser.uss" />
+    </ui:ListView>
+</ui:UXML>

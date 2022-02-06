@@ -1,0 +1,3 @@
+.cb--list {
+    flex-grow: 1;
+}
