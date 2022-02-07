@@ -95,6 +95,7 @@ namespace QuickEye.ReferenceValidator
                 RefreshPropList();
             });
 
+            propList.itemHeight = 22;
             propList.makeItem = () => new PropertyField();
             propList.bindItem = (element, i) =>
             {
@@ -109,10 +110,14 @@ namespace QuickEye.ReferenceValidator
                 var target = selectedProp.serializedObject.targetObject as Component;
                 var root = target.gameObject;
                 Selection.activeObject = root;
-                if (typeof(Object).IsAssignableFrom(selectedProp.GetPropertyType()))
+                if (typeof(Component).IsAssignableFrom(selectedProp.GetPropertyType()))
                 {
                     var children = root.GetComponentsInChildren(selectedProp.GetPropertyType(), true);
                     componentBrowser.Setup(children);
+                }
+                else
+                {
+                    componentBrowser.Setup(null);
                 }
             });
 

@@ -47,6 +47,12 @@ namespace QuickEye.ReferenceValidator
 
         public void Setup(Component[] components)
         {
+            if (components == null)
+            {
+                childrenList.itemsSource = null;
+                childrenList.Rebuild();
+                return;
+            }
             SetupList(childrenList, components);
         }
 
