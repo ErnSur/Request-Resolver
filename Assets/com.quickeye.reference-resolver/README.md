@@ -5,7 +5,8 @@
 text interpretation. create search queries from text
 - Drag n Drop support for object onto query field.
 - finish component browser
-
+- FEATURE: in selected prefabs find object with name x and select its RectTransform component?
+  - OR: revert selected component override values in all of the nested prefabs
 ## New View
 similar to Athena query view
 - Run button to run query on selected game objects
